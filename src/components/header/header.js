@@ -3,6 +3,8 @@ import logo from "../../assets/images/site-logo.svg";
 import { Link } from "react-router-dom";
 import "./header.scss";
 import Navbar from "../navbar/navbar";
+import Intro from "../intro/intro";
+import Countries from "../countries/countries";
 
 const Header = () => {
     return (
@@ -19,12 +21,14 @@ const Header = () => {
                     <input className="header__inp" type="search" name="search" placeholder="Поиск"  />
                 </form>
 
+                <Countries />
+
                 <Link className="header__link-tel header__link-tel--" to="/calculate">Калькулятор</Link>
                 <Link className="header__link-login" to="/login">Вход</Link>
             </div>
-
             </Container>
             <Navbar />
+            <Intro />
         </header>
     )
 }
