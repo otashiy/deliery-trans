@@ -1,5 +1,12 @@
 .navbar {
     background-color: #028BC1;
+    padding: 18px 0;
+    width: 100%;
+    margin-top: 21px;
+}
+
+.navbar__container {
+    padding: 0 20px;
 }
 
 .navbar__list {
@@ -19,4 +26,9 @@
 
 .navbar__item-link {
     color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        border-bottom: 2px solid #fff;
+    }
 }

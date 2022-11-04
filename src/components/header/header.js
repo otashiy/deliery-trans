@@ -8,21 +8,23 @@ const Header = () => {
     return (
         <header className="header">
             <Container className="header__container">
-            <a className="header__link" href="/">
-                <img src={logo} alt="site logo" width={130} height={60} />
-            </a>
-            
-            <a className="header__link-tel" href="tel:71234567890">7 123 456 78 90</a>
+            <div className="header__wrapper">
+                <a className="header__link" href="/">
+                    <img src={logo} alt="site logo" width={130} height={60} />
+                </a>
+                
+                <a className="header__link-tel" href="tel:71234567890">7 123 456 78 90</a>
 
-            <form action="#">
-                <input type="search" name="search" placeholder="Поиск"  />
-            </form>
+                <form action="#">
+                    <input className="header__inp" type="search" name="search" placeholder="Поиск"  />
+                </form>
 
-            <Link to="/calculate">Калькулятор</Link>
-            <Link to="/login">Вход</Link>
+                <Link className="header__link-tel header__link-tel--" to="/calculate">Калькулятор</Link>
+                <Link className="header__link-login" to="/login">Вход</Link>
+            </div>
 
+            </Container>
             <Navbar />
-       </Container>
         </header>
     )
 }
