@@ -1,0 +1,28 @@
+.type {
+    background-color: #F3F9FF;
+    padding: 110px 0 100px;
+}
+
+.type-list {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #FFf;
+    border-radius: 12px;
+}
+
+.type-list__item {
+    width: 319px;
+    text-align: center;
+}
+
+.type__container {
+    padding: 0 20px;
+}
+
+.type__wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
