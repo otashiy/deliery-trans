@@ -1,12 +1,12 @@
+import Container from "../../components/container/container";
 import Header from "../../components/header/header";
-import Type from "../../components/type/type";
 
 
-const Home = () => {
+const Home = ({children}) => {
     return (
       <>
        <Header />
-       <Type />
+       <Container>{children}</Container>
       </>
     )
 }

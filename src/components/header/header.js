@@ -3,7 +3,7 @@ import logo from "../../assets/images/site-logo.svg";
 import { Link } from "react-router-dom";
 import "./header.scss";
 import Navbar from "../navbar/navbar";
-import Intro from "../intro/intro";
+// import Intro from "../intro/intro";
 import Countries from "../countries/countries";
 
 const Header = () => {
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
             </Container>
             <Navbar />
-            <Intro />
+            {/* <Intro /> */}
         </header>
     )
 }

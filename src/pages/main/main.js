@@ -1,9 +1,8 @@
-import Home from "../home/home";
+import Intro from "../../components/intro/intro";
 
 const Main = () => {
     return (
-        <Home />
-        
+        <Intro/>
     )
 }
 
