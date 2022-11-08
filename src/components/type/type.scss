@@ -6,7 +6,7 @@
 
 .type-list {
     display: flex;
-    width: 1250px;
+    flex-grow: 1;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +30,7 @@
     background-color: #FFD200;
     border-radius: 12px;
     position: relative;
+    cursor: pointer;
 
     &::before {
         width: 25px;
@@ -54,8 +55,10 @@
     color: rgba(0, 103, 144, 1);
     background-color: transparent;
     border-radius: 12px;
+    transition: 0.3s all ease;
+    cursor: pointer;
 
-    &:active {
+    &:hover {
         background-color: #028BC1;
         color: #fff;
     }
@@ -65,7 +68,7 @@
 .type__wrapper {
     background-color: transparent;
     display: flex;
-    max-width: 1300px;
+    width: 1300px;
     align-items: center;
     justify-content: space-between;
     position: absolute;
@@ -75,7 +78,7 @@
 .type__car-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -84,7 +87,13 @@
     background-color: #fff;
     padding: 30px 10px 20px 10px;
     width: 250px;
+    margin-right: 60px;
+    flex-grow: 1;
     border-radius: 12px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .type__car-wrapper {
@@ -98,7 +107,7 @@
     text-decoration: none;
     background-color: 
     rgba(255, 210, 0, 1);
-    padding: 12px 55px;
+    padding: 12px 70px;
     text-align: center;
     border: 1px solid transparent;
     color: #000;

@@ -1,0 +1,86 @@
+.advantage{
+    padding: 60px 0 70px;
+}
+
+.advantage__container {
+    padding: 0 20px;
+}
+
+.advantage__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 80px;
+    line-height: 109px;
+}
+
+.advantage__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.advantage__item {
+    width: 400px;
+    flex-grow: 1;
+    height: 230px;
+    overflow: hidden;
+    margin-right: 30px;
+    background-color: #F3F9FF;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+        width: 100px;
+        height: 100px;
+        content: "";
+        display: block;
+        background: url("../../assets/images/advantage-oclock.svg") no-repeat;
+        position: absolute;
+        top: calc(50% - 30px);
+        right: 30px;
+    }
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+
+.advantage__item--money::after {
+    background: url("../../assets/images/advantage-money.svg") no-repeat;
+}
+
+.advantage__item--furgon::after {
+    background: url("../../assets/images/advantage-furgon.svg") no-repeat;
+}
+
+.advantage__item--cargo::after {
+    background: url("../../assets/images/advantage.cargo.svg") no-repeat;
+}
+
+.advantage__item--card::after {
+    background: url("../../assets/images/advantage-card.svg") no-repeat;
+}
+
+.advantage__item--person::after {
+    background: url("../../assets/images/advantage-person.svg") no-repeat;
+    right: 10px;
+}
+
+.advantage__item-title {
+    margin: 0;
+    font-style: Bold;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.advantage__item-desc {
+    margin: 0;
+    font-size: 18px;
+    line-height: 35px;
+    color: #667582;
+    width: 218px;
+}
