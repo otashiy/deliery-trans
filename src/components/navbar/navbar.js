@@ -9,22 +9,22 @@ const Navbar = () => {
             <Container className="navbar__container">
                 <ul className="navbar__list">
                     <li className="navbar__item">
-                        <Link className="navbar__item-link">Услуги</Link>
+                        <Link to="/services" className="navbar__item-link">Услуги</Link>
                     </li>
                     <li className="navbar__item">
-                        <Link className="navbar__item-link">Международные перевозки</Link>
+                        <Link to="/delivery" className="navbar__item-link">Международные перевозки</Link>
                     </li>
                     <li className="navbar__item">
-                        <Link className="navbar__item-link">Для бизнеса</Link>
+                        <Link to="/biznes" className="navbar__item-link">Для бизнеса</Link>
                     </li>
                     <li className="navbar__item">
-                        <Link className="navbar__item-link">Частным лицам</Link>
+                        <Link to="/persons" className="navbar__item-link">Частным лицам</Link>
                     </li>
                     <li className="navbar__item">
-                        <Link className="navbar__item-link">О компании</Link>
+                        <Link to="/about" className="navbar__item-link">О компании</Link>
                     </li>
                     <li className="navbar__item">
-                        <Link className="navbar__item-link">Контакты</Link>
+                        <Link to="/contact" className="navbar__item-link">Контакты</Link>
                     </li>
                     <li className="navbar__item">
                         <a className="navbar__item-link" href="https://deliverytrans@gmail.com">deliverytrans@gmail.com</a>

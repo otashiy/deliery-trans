@@ -23,8 +23,8 @@ const Type = () => {
                         <button className="type-list__item-btn">Фургон</button>
                     </li>
                     </ul>
-
                     <button className="type__btn"></button>
+
                 </div>
 
                 <ul className="type__car-list">
@@ -33,8 +33,8 @@ const Type = () => {
                         <img src={gazel} alt="gazel" width={200} height={96} />
 
                         <div className="type__car-wrapper">
-                            <Link>Заказать</Link>
-                            <button></button>
+                            <Link className="type__car-link">Заказать</Link>
+                            <button className="type__car-btn"></button>
                         </div>
                     </li>
                     <li className="type__car-item">
@@ -42,8 +42,8 @@ const Type = () => {
                         <img src={gazel} alt="gazel" width={200} height={96} />
 
                         <div className="type__car-wrapper">
-                            <Link>Заказать</Link>
-                            <button></button>
+                            <Link className="type__car-link">Заказать</Link>
+                            <button className="type__car-btn"></button>
                         </div>
                     </li>
                     <li className="type__car-item">
@@ -51,8 +51,8 @@ const Type = () => {
                         <img src={gazel} alt="gazel" width={200} height={96} />
 
                         <div className="type__car-wrapper">
-                            <Link>Заказать</Link>
-                            <button></button>
+                            <Link className="type__car-link">Заказать</Link>
+                            <button className="type__car-btn"></button>
                         </div>
                     </li>
                     <li className="type__car-item">
@@ -60,8 +60,8 @@ const Type = () => {
                         <img src={gazel} alt="gazel" width={200} height={96} />
 
                         <div className="type__car-wrapper">
-                            <Link>Заказать</Link>
-                            <button></button>
+                            <Link className="type__car-link">Заказать</Link>
+                            <button className="type__car-btn"></button>
                         </div>
                     </li>
                 </ul>

@@ -1,28 +1,133 @@
 .type {
     background-color: #F3F9FF;
     padding: 110px 0 100px;
+    position: relative;
 }
 
 .type-list {
     display: flex;
+    width: 1250px;
+    padding: 10px;
+    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
     background-color: #FFf;
     border-radius: 12px;
+    background-color: 
+    rgba(243, 249, 255, 1);
+    margin-right: 30px;
 }
 
-.type-list__item {
-    width: 319px;
-    text-align: center;
+// .type-list__item {
+//     width: 319px;
+//     text-align: center;
+// }
+
+.type__btn {
+    padding: 0;
+    border: none;
+    padding: 24px 27px;
+    background-color: #FFD200;
+    border-radius: 12px;
+    position: relative;
+
+    &::before {
+        width: 25px;
+        height: 32px;
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 21px;
+        background: url("../../assets/images/calculate-icon.svg") no-repeat;
+    }
 }
 
 .type__container {
     padding: 0 20px;
 }
 
+.type-list__item-btn {
+    padding: 0;
+    border: none;
+    text-align: center;
+    padding: 18px 40px;
+    color: rgba(0, 103, 144, 1);
+    background-color: transparent;
+    border-radius: 12px;
+
+    &:active {
+        background-color: #028BC1;
+        color: #fff;
+    }
+}
+
+
 .type__wrapper {
+    background-color: transparent;
     display: flex;
-    width: 100%;
+    max-width: 1300px;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    top: -20px;
+}
+
+.type__car-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.type__car-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 10px 20px 10px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.type__car-wrapper {
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.type__car-link {
+    text-decoration: none;
+    background-color: 
+    rgba(255, 210, 0, 1);
+    padding: 12px 55px;
+    text-align: center;
+    border: 1px solid transparent;
+    color: #000;
+    transition: 0.3s all ease;
+    border-radius: 12px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid rgba(255, 210, 0, 1);
+    }
+}
+
+.type__car-btn {
+    padding: 0;
+    border: none;
+    background-color: rgba(255, 210, 0, 1);
+    border-radius: 12px;
+    position: relative;
+    padding: 21px 22px;
+    cursor: pointer;
+
+    &::before {
+        width: 25px;
+        height: 32px;
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: 16px;
+        background: url("../../assets/images/calculate-icon.svg") no-repeat;
+    }
 }

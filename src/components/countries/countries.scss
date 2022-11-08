@@ -13,8 +13,25 @@
     font-style: Bold;
     text-align: center;
     cursor: pointer;
+    position: relative;
 
     &:hover {
         background-color: #D6EAFF;
     }
+}
+
+.countries__list--opened {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+}
+
+.countries__item {
+    padding: 20px 21px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: Bold;
 }
